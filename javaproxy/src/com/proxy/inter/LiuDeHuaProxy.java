@@ -3,7 +3,6 @@ package com.proxy.inter;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.security.cert.LDAPCertStoreParameters;
 
 public class LiuDeHuaProxy {
 		// TODO Auto-generated constructor stu
@@ -17,6 +16,7 @@ public class LiuDeHuaProxy {
 	* @date 2018-8-28上午10:25:00
 	 */
 	public Person getProxy(){
+
 		return (Person) Proxy.newProxyInstance(LiuDeHuaProxy.class.getClassLoader(),ldh.getClass().getInterfaces(),new InvocationHandler() {
 			public Object invoke(Object proxy, Method method, Object[] args)
 					throws Throwable {
