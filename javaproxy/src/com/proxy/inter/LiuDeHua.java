@@ -10,7 +10,9 @@ public class LiuDeHua implements Person {
 
 	public String dance(String name) {
 		System.err.println("刘德华跳舞"+name);
+		System.out.println("测试");
 		return "完毕谢谢大家 ";
 	}
+
 
 }
